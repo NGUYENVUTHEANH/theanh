@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1>🔥RIKKEI ACADEMY🔥</h1>
+    <div class="containerBig">
+        <div class="container">
+            <h2>Thông tin học viên</h2>
+            <div class="studentForm">
+                <div class="head">
+                    <span class="name" style="margin-top: 13px;">Họ và Tên</span>
+                    <input type="text" class="nameInput" required placeholder="vui lòng nhập tên"
+                        style="margin-left: 50px;padding-left: 10px;">
+                    <br>
+                </div>
+                <div class="head">
+                    <span class="email" style="margin-top: 13px;">Email</span>
+                    <input type="text" class="emailInput" required placeholder="vui lòng nhập email"
+                        style="margin-left: 80px; padding-left: 10px;">
+                    <br>
+                </div>
+                <div class="head">
+                    <span class="phone" style="margin-top: 13px;">Số điện thoại</span>
+                    <input type="email" class="phoneInput" required placeholder="vui lòng nhập số điện thoại"
+                        style="margin-left: 34px;padding-left: 10px;">
+                    <br>
+                </div>
+                <div class="head">
+                    <span class="address" style="margin-top: 13px;">Quê quán</span>
+                    <input type="text" class="addressInput" required placeholder="vui lòng nhập địa chỉ quê quán"
+                        style="margin-left: 55px;padding-left: 10px;">
+                    <br>
+                </div>
+                <span class="gender">Giới tính</span>
+                <select class="genderInput" required style="margin-left: 55px;">
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                </select>
+                <br>
+                <button class="save" type="submit" style="margin-left: 115px;">Lưu lại</button>
+                <div class="add2" style="display: none;">
+                    <div class="add1">
+                        <div class="add21">Đã lưu thành công <i class="fa-solid fa-check"
+                                style="color: rgb(3, 137, 255);"></i></div>
+                        <div class="add22">Thoát</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <h2>Danh sách học viên</h2>
+            <div class="findStudent" style="margin-top: 30px;">
+                <span class="searchStudent">Tìm kiếm học viên</span>
+                <input type="text" class="search">
+                <button class="searching">search</button>
+                <button class="apha-b">Sắp xếp a-z</button>
+            </div>
+            <table class="studentTable" border="2px">
+                <thead>
+                    <tr>
+                        <th style="width: 10px;">STT</th>
+                        <th style="width: 100px;">Họ tên</th>
+                        <th style="width: 100px;">Email</th>
+                        <th style="width: 100px;">Điện thoại</th>
+                        <th style="width: 50px;">Địa chỉ</th>
+                        <th style="width: 50px;">Giới tính</th>
+                        <th style="width: 100px;">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
